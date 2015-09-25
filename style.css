@@ -1,0 +1,158 @@
+body {
+
+	/* 日本語フォントの指定 */
+	font-family: 'メイリオ',
+	'Hiragino Kaku Gothic Pro', sans-serif;
+	background-color: #E9FFA5;
+	margin: 0;
+	color: #696969;
+	font-size: 30px;
+	line-height: 1.5;	/* line-height: 行間の値（正確には、フォントサイズと上下の余白合計値） ;  行間の指定*/
+	text-align: center;
+	font-family: cursive;  /*フォントの変更*/
+}
+/* containaer */
+div#container    {
+	width: 900px;		/* 表示させるサイトの幅を指定 */
+	margin :0 auto;		/* サイトを中央揃えにする設定 */
+	text-align: center;
+	
+}
+
+
+/* header */
+header#pageheader	{
+	background: none;
+	padding: 15px 0 0}
+
+
+
+/* ○○%というフォントの表示のしかたは、入れ子の大きいほうが先に指定されていたら、そこに対しての％で表示されている */
+h2 {
+	font-size: 185%;
+	border-left: 15px solid #ff9933;	/* ボックスモデル:文字の左側に緑色の ■ を表示させる */
+	padding-left: 10px;
+}
+
+h3 {
+	padding: 5px;
+	border: 1px solid #668800;
+	font-size: 154%;
+	clear:left;		/* よく使う */
+}
+
+h4 {
+	font-size: 124%;
+}
+
+table{
+	border: 1px solid #666611;
+	border-collapse: collapse;
+}
+
+th {
+	border: 1px solid #999999;
+	padding: 10px;
+	background-color: #CCCCCC;
+
+}
+
+td {
+	border: 1px solid #999999;
+	padding: 10px;
+	background-color: #eeeeee;
+}
+
+address {
+	font-size: 85%;
+	font-style: normal;		/* font-style: oblique;		addressの斜線表示を普通の表記にする*/
+	text-align: right;
+	border-top: 1px solid #000000;
+	padding-top: 10px;
+	clear:left;		/* よく使う */
+}
+
+.itemphoto {
+	float:left;
+	margin-right: 20px;
+	margin-bottom: 50px;
+}
+
+/*
+ul{
+	background-color:
+	#88aa00;
+	padding: 10px 20px;
+}
+
+li {
+	list-style-type: square;
+	display: inline;
+	padding-right: 20px;
+}
+
+li a:link{
+	color: #FFFFFF;
+}
+
+li a:visited{
+	color: #eeee00;
+
+li a:hover{
+	color: #000000;
+	text-decoration: none;
+} */
+
+
+/* menu */
+nav ul {
+	list-style-type: none;  /* マーカーなし */
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	overflow: hidden;
+	background-color: #ff9933;
+}
+
+nav li:first-child a {
+	border-left: solid px #ffffff;
+}
+
+nav li {
+	float: left;
+	margin-right: 15px;
+	width: 100px;
+	text-align: center;
+	border-right: solid 1px #ffffff;
+}
+
+nav li a {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	border-bottom: solid 5px transparent;
+}
+nav li a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav li a:visited {
+	color: #eeee00;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: #FF0000;
+	text-decoration: none;
+	border-bottom: solid 5px #ed6d35;
+}
+
+/* footer */
+footer	{color: #888888;
+	margin-top: 25px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	clear: both;
+	border-top: solid 1px #aaaaaa;
+}
