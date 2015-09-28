@@ -2,65 +2,71 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Seed to Cup</title>
+	<title>SEED TO CUP</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 	<!-- CSSのスタイルシートの設定はheadの中に書く -->
 	<link rel="stylesheet" href="style.css">
 	<!-- 別ファイルのstyle.cssファイルを読み込みスタイルの設定 -->
+
+
+<!-- IE8以下のブラウザ対応 -->
+<!-- [if LT IE9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.jp"></script>
+<![endif]-->
+
 </head>
 
 <body>
 <!-- コンテナ -->
 <div id="container">
 
-
 <!-- ヘッダー -->
 <header id="pageheader">
-		<h1>Seed to Cup</h1>
+		<h1>SEED TO CUP</h1>
 		<p>生産地からおいしいコーヒーまで</p>
 	
 		<nav>
 			<ul>
-				<li><a href="index.html">Hme</a></li>
-				<li><a href="news.html">Neww</a></li>		<!-- リンクの貼り付け：サイト内 -->
-				<li><a href="beans.html">Beans</a></li>
-				<li><a href="brewing.html">Brewing</la></i>
-				<li><a href="company.html">about us</a></li>
-				<li><a href="contact.html">contact</a></li>   <!-- [ul>li*]+Enter : リストに表示する -->
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="news.html">NEWS</a></li>		<!-- リンクの貼り付け：サイト内 -->
+				<li><a href="beans.html">BEANS</a></li>
+				<li><a href="brewing.html">BREWING</la></i>
+				<li><a href="company.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>   <!-- [ul>li*]+Enter : リストに表示する border-bottom: solid 5px transparent;-->
 			</ul>
 		</nav>
-		<!-- 装飾用の画像の表示 -->
-		<img src="images/coffee-662737__180.jpg" alt="">
 </header>
 <!-- ヘッダー ここまで -->
 
-<!-- メイン ここから -->
-<article>
-		<p>
-			コーヒー豆がめぐってきた旅路を巡りながら、おいしいコーヒーをお届けします。<br>
-			コーヒー豆から抽出器具、コーヒーと合うフードの紹介など日常でコーヒーを楽しむための提案をしています。
-		</p>
-	
+<!-- メイン ここから content-->
+<article itemscope itemtype="http://schema.org/Article">
+<header id="postheader">
+	<h1 itemprop="name">SEED TO CUPについて</h1>
+	<p id="summary" itemprop="description">
+		コーヒー豆がめぐってきた旅路を巡りながら、おいしいコーヒーをお届けします。<br>
+		コーヒー豆から抽出器具、コーヒーと合うフードの紹介など日常でコーヒーを楽しむための提案をしています。
+	</p>
+</header>
+	<div itemprop="articleBody">
+		<section>
 		<h2>News</h2>
 		<p>
-			エイジドコーヒー入荷しました。<br>
-			グリーンビーンズを3年から5年熟成させたエイジドコーヒー。この時期しか味わえない<br>
+			スマトラ産エイジドコーヒー入荷しました。<br>
+			グリーンビーンズを3年から5年熟成させたエイジドコーヒー。<br>この時期しか味わえない
 			厚みのあるコクをお試しくださいませ。
 		</p>
-		<!-- メイン ここまで -->
-	
-	
-	
-	<!-- フッダー ここから -->
-		<footer>
-			<div class="pc">
-			<small><span>&copy; Seed to Cup Corporation.</span></small>
-			<div id="toTop"><a href="#container">PAGE TOP</a></div>
-			</div>
-		</footer>
-	<!-- フッダー ここまで -->
+		</section>
+	</div><!-- メイン ここまで -->
+<!-- フッター ここまで -->
+	<footer>
+		<small>
+			<span>&copy; SEED TO CUP Corporation.</span>
+		</small>
+		<div id="toTop"><a href="#container">PAGE TOP</a></div>
+	</footer>
+<!-- フッター ここまで -->
 </article>
 </div>
-
 
 </body>
 </html>

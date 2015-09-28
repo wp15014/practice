@@ -3,9 +3,9 @@ body {
 	/* 日本語フォントの指定 */
 	font-family: 'メイリオ',
 	'Hiragino Kaku Gothic Pro', sans-serif;
-	background-color: #E9FFA5;
+	background-color: ##FFFFFF;
 	margin: 0;
-	color: #696969;
+	color: #000000;
 	font-size: 30px;
 	line-height: 1.5;	/* line-height: 行間の値（正確には、フォントサイズと上下の余白合計値） ;  行間の指定*/
 	text-align: center;
@@ -16,92 +16,29 @@ div#container    {
 	width: 900px;		/* 表示させるサイトの幅を指定 */
 	margin :0 auto;		/* サイトを中央揃えにする設定 */
 	text-align: center;
-	
+	font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 
 /* header */
 header#pageheader	{
-	background: none;
-	padding: 15px 0 0}
-
-
-
-/* ○○%というフォントの表示のしかたは、入れ子の大きいほうが先に指定されていたら、そこに対しての％で表示されている */
-h2 {
-	font-size: 185%;
-	border-left: 15px solid #ff9933;	/* ボックスモデル:文字の左側に緑色の ■ を表示させる */
-	padding-left: 10px;
+	padding: 15px 0 0;
+	background-image: url(images/colorful-watercolor-paint-abstract-website-header.jpg);
 }
 
-h3 {
-	padding: 5px;
-	border: 1px solid #668800;
-	font-size: 154%;
-	clear:left;		/* よく使う */
+header#pageheader h1{
+	margin:0;
+	padding: 0;
+	float: left;
+	
 }
 
-h4 {
-	font-size: 124%;
+header p    {
+	text-align: left;
+	font-size: 15px;
+	margin-top:0 0 98px 20px;
 }
-
-table{
-	border: 1px solid #666611;
-	border-collapse: collapse;
-}
-
-th {
-	border: 1px solid #999999;
-	padding: 10px;
-	background-color: #CCCCCC;
-
-}
-
-td {
-	border: 1px solid #999999;
-	padding: 10px;
-	background-color: #eeeeee;
-}
-
-address {
-	font-size: 85%;
-	font-style: normal;		/* font-style: oblique;		addressの斜線表示を普通の表記にする*/
-	text-align: right;
-	border-top: 1px solid #000000;
-	padding-top: 10px;
-	clear:left;		/* よく使う */
-}
-
-.itemphoto {
-	float:left;
-	margin-right: 20px;
-	margin-bottom: 50px;
-}
-
-/*
-ul{
-	background-color:
-	#88aa00;
-	padding: 10px 20px;
-}
-
-li {
-	list-style-type: square;
-	display: inline;
-	padding-right: 20px;
-}
-
-li a:link{
-	color: #FFFFFF;
-}
-
-li a:visited{
-	color: #eeee00;
-
-li a:hover{
-	color: #000000;
-	text-decoration: none;
-} */
 
 
 /* menu */
@@ -109,28 +46,28 @@ nav ul {
 	list-style-type: none;  /* マーカーなし */
 	margin: 0;
 	padding: 0;
-	font-size: 20px;
+	font-size: 15px;
 	overflow: hidden;
-	background-color: #ff9933;
 }
 
 nav li:first-child a {
-	border-left: solid px #ffffff;
+	border-left: solid px #FFFF00;
 }
 
 nav li {
+	color: #000000;
 	float: left;
 	margin-right: 15px;
 	width: 100px;
 	text-align: center;
-	border-right: solid 1px #ffffff;
 }
 
 nav li a {
+	color: #000000;
 	display: block;
-	padding-top: 15px;
-	padding-bottom: 30px;
-	border-bottom: solid 5px transparent;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
 }
 nav li a:link {
 	color: #ffffff;
@@ -138,21 +75,60 @@ nav li a:link {
 }
 
 nav li a:visited {
-	color: #eeee00;
+	color: #000000;
 	text-decoration: none;
 }
 
 nav li a:hover {
-	color: #FF0000;
+	color: #0000FF;
 	text-decoration: none;
-	border-bottom: solid 5px #ed6d35;
 }
 
-/* footer */
-footer	{color: #888888;
+/* content */
+article    {
+	width: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 記事のヘッダー */
+header#postheader h1    {
+		font-size: 20px;
+}
+
+article h2    {
+	font-size: 20px;
+	text-align: left;
+	
+}
+
+article p    {
+	font-size: 15px;
+	text-align: center;
+	
+}
+
+article section    {
+	font-size: 15px;
+}
+
+/* footer  display: block; */
+footer	{color: #808080;
 	margin-top: 25px;
 	padding-top: 8px;
 	padding-bottom: 8px;
 	clear: both;
-	border-top: solid 1px #aaaaaa;
+	border-top: solid 1px #808080;
+	font-size: 15px;
+}
+
+small    {
+	font-size: 15px;
+	text-align: center;
+	
+}
+
+div#toTop    {
+	font-size: 15px;
 }
