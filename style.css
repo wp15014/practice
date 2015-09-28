@@ -6,7 +6,7 @@ body {
 	background-color: ##FFFFFF;
 	margin: 0;
 	color: #000000;
-	font-size: 30px;
+	font-size: 15px;
 	line-height: 1.5;	/* line-height: 行間の値（正確には、フォントサイズと上下の余白合計値） ;  行間の指定*/
 	text-align: center;
 	font-family: 'Roboto Condensed', sans-serif;/*フォントの変更*/
@@ -15,12 +15,12 @@ body {
 div#container    {
 	width: 900px;		/* 表示させるサイトの幅を指定 */
 	margin :0 auto;		/* サイトを中央揃えにする設定 */
-	text-align: center;
+	text-align: center;/*  */
 	
 
 }
 
-
+p.left {text-align: left}
 /* header */
 header#pageheader	{
 	padding: 15px 0 20;
@@ -28,31 +28,35 @@ header#pageheader	{
 }
 
 header#pageheader h1{
+	font-size: 40px;
 	margin:0;
 	padding: 0;
-	float: left;
-	
+	text-align: left;
 }
 
-header p    {
+header#pageheader p    {
+	font-size: 15px;	
 	text-align: left;
-	font-size: 15px;
 	margin-top:0 0 98px 20px;
 }
 
 
 /* menu */
+
+nav   {
+	clear: both;
+}
 nav ul {
 	list-style-type: none;  /* マーカーなし */
 	margin: 0;
 	padding: 0;
 	font-size: 15px;
 	overflow: hidden;
+	/*display: block;*/
+	clear: both;
+	/*メニューに対しての回り込み防止*/
 }
 
-nav li:first-child a {
-	border-left: solid px #FFFF00;
-}
 
 nav li {
 	color: #000000;
@@ -67,6 +71,7 @@ nav li a {
 	display: block;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	display: block;;
 	
 }
 nav li a:link {
@@ -84,36 +89,54 @@ nav li a:hover {
 	text-decoration: none;
 }
 
-/* content */
-article    {
-	width: auto;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
+/* content 
 
 /* 記事のヘッダー */
 header#postheader h1    {
-		font-size: 20px;
+		font- size: 10px;
 }
 
-article h2    {
+article section    {
+	clear: both; /* 回り込み解除 */
+}
+
+article header h1    {
+	font-size: 15;
+	text-align: left;
+}
+
+/* sectionの見出し */
+article section h1   {
+	font-size: 15px;
+	text-align: left;
+	
+}
+
+
+article section h2    {
 	font-size: 20px;
 	text-align: left;
 	
 }
 
-article p    {
-	font-size: 15px;
-	text-align: center;
+article section h3    {
+	font-size: 20px;
+	text-align: left;
 	
 }
 
-article section    {
+article section p    {
+	float: left;
 	font-size: 15px;
+	text-align: center;
+
 }
 
-/* footer  display: block; */
+article section table    {
+	float: left;
+}
+
+/* footer   */
 footer	{color: #808080;
 	margin-top: 25px;
 	padding-top: 8px;
