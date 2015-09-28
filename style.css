@@ -9,21 +9,21 @@ body {
 	font-size: 30px;
 	line-height: 1.5;	/* line-height: 行間の値（正確には、フォントサイズと上下の余白合計値） ;  行間の指定*/
 	text-align: center;
-	font-family: cursive;  /*フォントの変更*/
+	font-family: 'Roboto Condensed', sans-serif;/*フォントの変更*/
 }
 /* containaer */
 div#container    {
 	width: 900px;		/* 表示させるサイトの幅を指定 */
 	margin :0 auto;		/* サイトを中央揃えにする設定 */
 	text-align: center;
-	font-family: 'Roboto Condensed', sans-serif;
+	
 
 }
 
 
 /* header */
 header#pageheader	{
-	padding: 15px 0 0;
+	padding: 15px 0 20;
 	background-image: url(images/colorful-watercolor-paint-abstract-website-header.jpg);
 }
 
