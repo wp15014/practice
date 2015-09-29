@@ -1,4 +1,4 @@
-9/25練習でHTML,CSSを使ってホームページを作成
+/9/25練習でHTML,CSSを使ってホームページを作成
 
 ホームページのテーマ
 『コーヒー店』
@@ -14,9 +14,12 @@
 　抽出器具の説明
 
 ・contact.html
-
+9/29contact.thmlファイル削除→company.htmlとまとめる
 
 ・company.html
 
 
 ・news.html
+
+・参考HP
+・http://con-trast.jp/

@@ -7,76 +7,81 @@ body {
 	margin: 0;
 	color: #000000;
 	font-size: 15px;
-	line-height: 1.5;	/* line-height: 行間の値（正確には、フォントサイズと上下の余白合計値） ;  行間の指定*/
-	text-align: center;
+	line-height: 2.5;	/* （フォントサイズと上下の余白合計値） ;  行間の指定*/
 	font-family: 'Roboto Condensed', sans-serif;/*フォントの変更*/
 }
-/* containaer */
+
+/* containaer 表示させる横幅の指定*/
 div#container    {
 	width: 900px;		/* 表示させるサイトの幅を指定 */
 	margin :0 auto;		/* サイトを中央揃えにする設定 */
 	text-align: center;/*  */
-	
-
 }
 
-p.left {text-align: left}
-/* header */
+/* ヘッダーの設定 */
 header#pageheader	{
 	padding: 15px 0 20;
 	background-image: url(images/colorful-watercolor-paint-abstract-website-header.jpg);
 }
 
+/* ヘッダーの設定 サイト名の表示 */
 header#pageheader h1{
-	font-size: 40px;
+	font-size: 60px;
 	margin:0;
 	padding: 0;
+	padding-bottom: 0;
 	text-align: left;
 }
 
+/*  ページタイトル下の文  */
 header#pageheader p    {
-	font-size: 15px;	
+	font-size: 20px;
 	text-align: left;
-	margin-top:0 0 98px 20px;
+	margin:0;
+	padding: 0;
 }
 
-
-/* menu */
-
+/***ナビゲーションメニュー ****************
+回り込み防止*/
+/* 回り込みを解除 */
 nav   {
 	clear: both;
 }
+
+/* ナビがヘッダー画像と重なって表示させる */
 nav ul {
-	list-style-type: none;  /* マーカーなし */
-	margin: 0;
+	list-style-type: none;    /*リストの○ぽちなくす*/
 	padding: 0;
-	font-size: 15px;
+	font-size: 25px;
 	overflow: hidden;
-	/*display: block;*/
 	clear: both;
-	/*メニューに対しての回り込み防止*/
+
 }
 
+/* 何設定？ */
+nav ul li	{list-style-type: none;
+	float: left}
 
+/*ナビゲーションの設定*/
 nav li {
 	color: #000000;
-	float: left;
-	margin-right: 15px;
+	float: left;  /*左側に回り込み*/
+	margin-right: 40px;   /* リンクの幅 */
 	width: 100px;
-	text-align: center;
+
 }
 
+/* リンクの文字 */
 nav li a {
-	color: #000000;
+	color: #000000;   /* リンクの文字 */
 	display: block;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	display: block;;
-	
 }
+
 nav li a:link {
 	color: #ffffff;
-	text-decoration: none;
+	text-decoration: none;  /* リンクの文字の下線なし */
 }
 
 nav li a:visited {
@@ -84,57 +89,83 @@ nav li a:visited {
 	text-decoration: none;
 }
 
+/* カーソルを乗せたときに文字色の変化指定 */
 nav li a:hover {
 	color: #0000FF;
 	text-decoration: none;
 }
 
-/* content 
+/* ↑ナビゲーションの適用↑ */
+
+/* content */
+article	{width: auto;    /* 領域の幅を自動設定 */
+	margin-left: auto;
+	margin-right: auto}
+
+article header    {
+	/*border: solid 1px #aaaaaa;   四角で囲い込み  ×あとで消す×  */
+	margin: 20px 0px 10px;
+	padding-left: 20px;
+	text-align: left;
+}
 
 /* 記事のヘッダー */
-header#postheader h1    {
-		font- size: 10px;
-}
-
-article section    {
-	clear: both; /* 回り込み解除 */
-}
-
 article header h1    {
-	font-size: 15;
+		font-size: 30px;
+		background: none;  /* 背景に関する指定をまとめて行う */
+		line-height: 45px;  /* 行の高さを指定する */
+		font-weight: normal;
+		clear: both;
+}
+
+/* chap5-1 */
+article header p    {
+	font-size: 16px;
+	color: #444444;    /*文字の色*/
 	text-align: left;
 }
 
-/* sectionの見出し */
-article section h1   {
+/*** 記事のヘッダー 設定終わり ***/
+
+/* 各記事の設定　画像への回り込み解除 */
+article section  {
+	clear: both;
+	/*border: solid 1px #aaaaaa;   あとで消す*/
+	margin: 20px 0 10px;   /*外側の余白設定*/
+	padding: 18px;        /*内側の余白設定*/
+	border-radius: 5px;
+	overflow: hidden;        /*セクション内に画像を収める*/
+}
+
+article section h1{
+	font-size: 24px;
+	font-weight: normal;   /*フォントの太さ指定*/
+	line-height: 22px;   /*行の高さを指定*/
+	padding-left: 0;
+	margin-top: 0 10px 0 0;
+	text-align: left;
+}
+
+article p	{
 	font-size: 15px;
+	line-height: 1.6;  /*行間の幅*/
+	margin-top: 10px;
+	margin-left: 0;
+	margin-right: 0;
 	text-align: left;
-	
 }
 
+/* 画像の配置 chap4-6 
+figure  {
+	margin: 0;
+}*/
 
-article section h2    {
-	font-size: 20px;
-	text-align: left;
-	
-}
+/*  */
+article section figure	{
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 0;}
 
-article section h3    {
-	font-size: 20px;
-	text-align: left;
-	
-}
-
-article section p    {
-	float: left;
-	font-size: 15px;
-	text-align: center;
-
-}
-
-article section table    {
-	float: left;
-}
 
 /* footer   */
 footer	{color: #808080;
@@ -155,3 +186,28 @@ small    {
 div#toTop    {
 	font-size: 15px;
 }
+
+/* =================PC用の設定　始まり===============  */
+/* @media only screen and (min-width:900px)    {
+	article div[itemprop="articleBody"]    {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+}
+}
+/* =
+article section    {
+	width: 288px;
+	margin-right: 18px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+
+}
+
+
+
+
+
+==============PC用の設定　始まり=============== */
+
